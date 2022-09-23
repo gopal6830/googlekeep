@@ -23,9 +23,9 @@ if(!empty($_GET['dida']))
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- <meta charset="UTF-8" />
+      <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><img src="edit.png">Google Keep</title>
     <link
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
@@ -183,74 +183,6 @@ if(!empty($_GET['dida']))
       <?php
     }
     ?>
-
-     <!--  <div class="modal">
-        <div class="modal-content">
-          <div class="form-container active-form">
-            <form>
-              <input type="text" class="note-title" placeholder="Title" />
-              <input
-                class="note-text"
-                type="text"
-                placeholder="Take a note..."
-              />
-              <div class="form-actions">
-                <div class="icons">
-                  <div class="tooltip">
-                    <span class="material-icons-outlined hover small-icon"
-                      >add_alert</span
-                    >
-                    <span class="tooltip-text">Remind me</span>
-                  </div>
-                  <div class="tooltip">
-                    <span class="material-icons-outlined hover small-icon"
-                      >person_add</span
-                    >
-                    <span class="tooltip-text">Collaborator</span>
-                  </div>
-                  <div class="tooltip">
-                    <span class="material-icons-outlined hover small-icon"
-                      >palette</span
-                    >
-                    <span class="tooltip-text">Change Color</span>
-                  </div>
-                  <div class="tooltip">
-                    <span class="material-icons-outlined hover small-icon"
-                      >image</span
-                    >
-                    <span class="tooltip-text">Add Image</span>
-                  </div>
-                  <div class="tooltip">
-                    <span class="material-icons-outlined hover small-icon"
-                      >archive</span
-                    >
-                    <span class="tooltip-text">Archive</span>
-                  </div>
-                  <div class="tooltip">
-                    <span class="material-icons-outlined hover small-icon"
-                      >more_vert</span
-                    >
-                    <span class="tooltip-text">More</span>
-                  </div>
-                  <div class="tooltip">
-                    <span class="material-icons-outlined hover small-icon"
-                      >undo</span
-                    >
-                    <span class="tooltip-text">Undo</span>
-                  </div>
-                  <div class="tooltip">
-                    <span class="material-icons-outlined hover small-icon"
-                      >redo</span
-                    >
-                    <span class="tooltip-text">Redo</span>
-                  </div>
-                </div>
-                <button class="close-btn">Close</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div> -->
     </main>
   </body>
 </html>
