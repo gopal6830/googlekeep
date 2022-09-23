@@ -57,79 +57,13 @@ $connect=mysqli_connect("localhost","root","","googlekeep") or die("Connection F
     echo "Record Not Deleted";
   }
  }
-
-//   if (isset($_POST['save'])) {
- 
-//     $filename = $_FILES["uploadfile"]["name"];
-//     $tempname = $_FILES["uploadfile"]["tmp_name"];
-//     $folder = "./image/" . $filename;
-
- 
-//     // Get all the submitted data from the form
-//     $query = "INSERT INTO notes (filename) VALUES ('$filename')";
- 
-//     // Execute query
-//     mysqli_query($connect, $query);
- 
-//     // Now let's move the uploaded image into the folder: image
-//     if () {
-//        {
-//         header('location:index.php');
-//        }
-//     } else {
-//        header('location:index.php');
-//         echo "<h3>  Failed to upload image!</h3>";
-//     }
-// }
-  
- // if(!empty($_POST['update']))
- // {
- //  $id=$result['id'];
- //  // var_dump($id);
- //  // print_r($id); 
- //  $title=$_POST['title'];
- //  $name=$_POST['name'];
- //  $filename=$_FILES['uploadfile']['name'];
- //  $filepath=$_FILES['uploadfile']['tmp_name'];
- //  // break the name into two parts
- //  $imagename=explode(".", $filename);
- //  $ext=$imagename[1];
-  
- //  // print_r($imagename);
- //  //echo $ext;
- //  $query="show table status like 'filenme' ";
- //  $result=mysqli_query($connect,$query);
- //  $data=mysqli_fetch_assoc($result);
- //  //print_r($row);
- //  // $id=$row['Auto_increment'];
- //  // unlink("uploadimages/".$data['image']);
- //  $newfilename=$id.".".$ext;
- // if(!empty($_POST['update']))
- // {
- //  $title=$_POST['title'];
- //  $name=$_POST['name'];
- //  $filename = $_FILES["uploadfile"]["name"];
- //  $tempname = $_FILES["uploadfile"]["tmp_name"];
- //  $folder = "./image/" . $filename;
- //  $query="update notes set  title='$title' name='$name', filename='$filename' ";
- //  if(mysqli_query($connect,$query))
- //  {
- //    move_uploaded_file($tempname, "./image/".$folder);
- //    header('location:index.php');
- //  }
- //  else{
- //    echo "Recodd Not  Updated";
- //  }
-
-
- // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- <meta charset="UTF-8" />
+      <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><img src="edit.png">Google Keep</title>
     <link
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
@@ -211,25 +145,6 @@ $connect=mysqli_connect("localhost","root","","googlekeep") or die("Connection F
           <span class="sidebar-text"><a class="abc hovers" href="trash.php";>Trash</a></span>
         </div>
       </div>
-      <!-- <div class="form-container">
-        <form>
-          <input class="note-text" type="text" placeholder="Take a note..." />
-          <div class="form-actions">
-            <div class="tooltip">
-              <span class="material-icons-outlined hover">check_box</span>
-              <span class="tooltip-text">New List</span>
-            </div>
-            <div class="tooltip">
-              <span class="material-icons-outlined hover">brush</span>
-              <span class="tooltip-text">New Drawing</span>
-            </div>
-            <div class="tooltip">
-              <span class="material-icons-outlined hover">image</span>
-              <span class="tooltip-text">New Image</span>
-            </div>
-          </div>
-        </form>
-      </div> -->
 
       <div class="form-container active-form">
         <form method="post" action="index.php" enctype="multipart/form-data">
@@ -311,7 +226,6 @@ if(!empty($_REQUEST['v']))
       ?>
       <div class="notes">
         <div class="note">
-          <!-- <span class="material-icons check-circle">check_circle</span> -->
           <div class="title"><?php echo $row['title']?></div>
           <div class="text"><?php echo $row['name']?></div>
           <div class="note-footer">
